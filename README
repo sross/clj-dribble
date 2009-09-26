@@ -1,0 +1,8 @@
+An implementation of dribble in clojure.
+
+
+Syntax: dribble &optional pathname
+
+Sends a record of all input & output to OUT, which must be a suitable argument to clojure.contrib.duck-streams/writer. This can be called many times.
+Calling dribble with no arguments terminates the most recent transcript.
+Currently only *in* and *out* are redirected, *err* remains untouched.
